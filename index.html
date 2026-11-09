@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ComfortPeak Air - HVAC in Charlotte, NC | AC Repair, Furnace Install, $17/mo Maintenance Plan</title>
+<meta name="description" content="ComfortPeak Air, Charlotte NC. AC repair from $129, furnace installation, tune-ups and a $17/mo maintenance plan. Free in-home estimates on new systems. Call (704) 555-0163.">
+<style>
+  :root{
+    --sky:#e8f4fc; --sky2:#d3eafd; --blue:#1b7ec8; --blue2:#0f5f9e; --deep:#0d3a5c;
+    --warm:#ff8a3d; --warm2:#fff1e6;
+    --white:#fff; --ink:#22303c; --soft:#5d7282; --line:#dce9f2;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:#f7fbfe;color:var(--ink);
+    font-family:"Trebuchet MS","Segoe UI",Verdana,Helvetica,Arial,sans-serif;
+    line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:"Trebuchet MS","Segoe UI",sans-serif;font-weight:700;line-height:1.2;color:var(--deep)}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  .tag{display:inline-block;background:var(--sky2);color:var(--blue2);font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;padding:6px 14px;border-radius:999px}
+
+  header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+  .brand{color:var(--deep);text-decoration:none;font-size:22px;font-weight:800}
+  .brand span{color:var(--blue)}
+  .brand i{color:var(--warm);font-style:normal}
+  .brand small{display:block;font-size:10px;letter-spacing:.3em;color:var(--soft);font-weight:700;text-transform:uppercase}
+  .links{display:flex;gap:26px;align-items:center}
+  .links a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+  .links a:hover{color:var(--blue)}
+  .callbtn{background:var(--blue);color:#fff!important;padding:11px 18px;border-radius:999px}
+  .callbtn:hover{background:var(--blue2)}
+  @media(max-width:820px){.links a:not(.callbtn){display:none}}
+
+  /* split hero */
+  .hero{display:grid;grid-template-columns:1fr 1fr;min-height:430px}
+  @media(max-width:820px){.hero{grid-template-columns:1fr}}
+  .half{padding:58px 34px;display:flex;flex-direction:column;justify-content:center;color:#fff;position:relative;overflow:hidden}
+  .cool{background:linear-gradient(150deg,#2f9be8,#0f5f9e)}
+  .heat{background:linear-gradient(150deg,#ffa25e,#e56a17)}
+  .half .ic{font-size:44px;margin-bottom:12px}
+  .half h1,.half h2{color:#fff;font-size:clamp(28px,3.6vw,42px)}
+  .half p{color:rgba(255,255,255,.88);margin:12px 0 20px;max-width:420px;font-size:17px}
+  .half .mini{font-weight:700;letter-spacing:.2em;font-size:11px;text-transform:uppercase;background:rgba(255,255,255,.18);align-self:flex-start;padding:6px 12px;border-radius:999px;margin-bottom:14px}
+  .half a.btn{align-self:flex-start;background:#fff;text-decoration:none;font-weight:800;padding:13px 24px;border-radius:999px;font-size:14px;text-transform:uppercase;letter-spacing:.05em}
+  .cool a.btn{color:var(--blue2)} .heat a.btn{color:#c85a10}
+  .herobase{background:var(--white);border-bottom:1px solid var(--line);padding:18px 0}
+  .trustrow{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:14px;font-weight:700;color:var(--deep)}
+  .trustrow span:before{content:"✓ ";color:var(--blue)}
+  .trustrow a{color:var(--blue);text-decoration:none}
+
+  section{padding:62px 0}
+  .sec-head{margin-bottom:30px}
+  .sec-head h2{font-size:clamp(25px,3.4vw,36px);margin-top:14px}
+  .sec-head p{color:var(--soft);max-width:640px;margin-top:8px}
+
+  .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .svc{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:0 2px 10px rgba(13,58,92,.05)}
+  .svc .ic{font-size:26px;margin-bottom:8px}
+  .svc h3{font-size:17px;margin-bottom:6px}
+  .svc p{color:var(--soft);font-size:14px}
+  .price{margin-top:12px;color:var(--blue);font-size:19px;font-weight:800}
+  .price small{color:var(--soft);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+  .svc.warm{border-color:#ffd9bd;background:var(--warm2)}
+  .svc.warm .price{color:#d96a1e}
+
+  /* plan */
+  .plan{background:linear-gradient(135deg,var(--deep),var(--blue2));border-radius:18px;color:#fff;padding:40px;display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center}
+  @media(max-width:820px){.plan{grid-template-columns:1fr}}
+  .plan h3{color:#fff;font-size:28px;margin:12px 0 10px}
+  .plan p{color:#cfe6f7;font-size:16px}
+  .planprice{background:#fff;color:var(--deep);border-radius:14px;padding:28px;text-align:center}
+  .planprice .big{font-size:52px;font-weight:800;color:var(--blue);line-height:1}
+  .planprice .big small{font-size:20px;color:var(--soft)}
+  .planprice ul{list-style:none;text-align:left;margin:18px 0;font-size:15px}
+  .planprice li{padding:7px 0;border-bottom:1px dashed var(--line)}
+  .planprice li:before{content:"✓ ";color:var(--blue);font-weight:900}
+  .planprice li:last-child{border:none}
+  .planprice a{display:block;background:var(--warm);color:#fff;text-decoration:none;font-weight:800;padding:14px;border-radius:999px;text-transform:uppercase;font-size:14px;letter-spacing:.05em}
+
+  .brands{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .brandbadge{border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:14px 22px;font-weight:800;color:var(--deep);font-size:16px;letter-spacing:.04em}
+  .brandbadge small{display:block;font-weight:600;color:var(--soft);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+
+  .ratingline{font-size:18px;font-weight:700;color:var(--deep);margin-bottom:24px}
+  .ratingline .stars{color:#ffb02e;letter-spacing:3px;font-size:21px}
+  .rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+  .rev{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}
+  .rev .stars{color:#ffb02e;letter-spacing:2px}
+  .rev p{color:var(--ink);margin:10px 0 14px;font-size:15px}
+  .rev b{color:var(--blue2);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+
+  .areas{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{background:var(--sky);border:1px solid var(--sky2);padding:8px 16px;border-radius:999px;font-size:14px;font-weight:600}
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:22px}
+  .info{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+  .info b{display:block;color:var(--blue);text-transform:uppercase;font-size:11px;letter-spacing:.2em;margin-bottom:6px}
+  .info a{color:var(--deep);font-weight:800;text-decoration:none;font-size:18px}
+
+  .formsec{background:var(--sky)}
+  form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){form{grid-template-columns:1fr}}
+  label{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue2);display:block;margin-bottom:6px}
+  input,select,textarea{width:100%;padding:13px;border:1px solid #bfd9ec;border-radius:10px;font-size:15px;background:#fff;font-family:inherit;color:var(--ink)}
+  textarea{grid-column:1/-1;min-height:96px}
+  button.submit{background:var(--blue);color:#fff;border:none;padding:16px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:15px;border-radius:999px;cursor:pointer;grid-column:1/-1}
+  button.submit:hover{background:var(--blue2)}
+  .formnote{grid-column:1/-1;font-size:13px;color:var(--soft);text-align:center}
+
+  footer{background:var(--deep);color:#a9c6da;padding:44px 0 90px;font-size:14px}
+  footer .fbrand{color:#fff;font-size:19px;font-weight:800;margin-bottom:10px}
+  footer .fbrand span{color:#7cc0f2}
+  footer a{color:#ffd9bd;font-weight:700;text-decoration:none}
+  .demoflag{margin-top:22px;border-top:1px solid rgba(255,255,255,.16);padding-top:18px;font-size:13px;color:#7fa3ba}
+
+  .sticky-call{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--blue);color:#fff;text-align:center;padding:14px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:16px;text-decoration:none;box-shadow:0 -4px 18px rgba(13,58,92,.3)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">Comfort<span>Peak</span> <i>Air</i><small>Heating · Cooling · Charlotte NC</small></a>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#plan">Plan</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#quote" class="callbtn">Free Estimate</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="half cool">
+    <div class="mini">❄ Cooling</div>
+    <div class="ic">🌬️</div>
+    <h1>Too hot inside?</h1>
+    <p>AC repair, tune-ups and new cooling systems that keep Charlotte homes comfortable through the stickiest Carolina summer.</p>
+    <a class="btn" href="tel:+17045550163">Call for Cooling Help</a>
+  </div>
+  <div class="half heat">
+    <div class="mini">🔥 Heating</div>
+    <div class="ic">🏠</div>
+    <h2>Too cold inside?</h2>
+    <p>Furnace repair and replacement, heat pumps and honest advice on whether to repair or replace - no scare tactics, ever.</p>
+    <a class="btn" href="tel:+17045550163">Call for Heating Help</a>
+  </div>
+</div>
+<div class="herobase">
+  <div class="wrap trustrow">
+    <span>NC HVAC Licence #H3-28741</span>
+    <span>Licensed &amp; insured</span>
+    <span>4.9★ · 980+ Google reviews</span>
+    <span>24/7 emergency line: <a href="tel:+17045550163">(704) 555-0163</a></span>
+    <span>Free in-home estimates on new systems</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Services &amp; Prices</span>
+      <h2>Heating and cooling, priced plainly</h2>
+      <p>Starting prices for common jobs around Charlotte. Repairs are quoted flat before we start, and new-system estimates in your home are always free.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="ic">❄️</div><h3>AC Repair</h3><p>Not cooling, freezing up or short-cycling - we diagnose the real cause and quote the fix before we start.</p><div class="price"><small>From</small> $129</div></div>
+      <div class="svc"><div class="ic">🧰</div><h3>AC Tune-Up</h3><p>21-point seasonal check: coils, refrigerant, airflow, electrics and a written health report for your system.</p><div class="price"><small>Only</small> $89</div></div>
+      <div class="svc"><div class="ic">🌀</div><h3>New AC Installation</h3><p>Right-sized systems from leading brands, installed in a day for most homes, with a 10-year parts warranty.</p><div class="price"><small>From</small> $4,800</div></div>
+      <div class="svc"><div class="ic">🌡️</div><h3>Heat Pump Systems</h3><p>Heating and cooling in one efficient unit - a smart fit for North Carolina's mild winters.</p><div class="price"><small>From</small> $5,600</div></div>
+      <div class="svc warm"><div class="ic">🔥</div><h3>Furnace Repair</h3><p>No heat calls answered around the clock. Most common failures fixed on the first visit from van stock.</p><div class="price"><small>From</small> $139</div></div>
+      <div class="svc warm"><div class="ic">🏭</div><h3>Furnace Installation</h3><p>High-efficiency gas furnaces sized to your home, with new thermostat and full safety checks included.</p><div class="price"><small>From</small> $3,900</div></div>
+      <div class="svc"><div class="ic">🌫️</div><h3>Duct Cleaning</h3><p>Full-system duct cleaning that helps airflow, dust and allergies - with before and after camera views.</p><div class="price"><small>From</small> $349</div></div>
+      <div class="svc"><div class="ic">📱</div><h3>Smart Thermostats</h3><p>Supply and setup of smart thermostats, connected to your Wi-Fi and phone before we leave.</p><div class="price"><small>From</small> $179</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="plan" style="padding-top:0">
+  <div class="wrap">
+    <div class="plan">
+      <div>
+        <span class="tag" style="background:rgba(255,255,255,.16);color:#fff">PeakCare Maintenance Plan</span>
+        <h3>Two tune-ups a year, zero surprise breakdowns</h3>
+        <p>Most breakdowns we repair were preventable. PeakCare members get both seasonal tune-ups covered, jump the queue when something does go wrong, and never pay overtime rates.</p>
+      </div>
+      <div class="planprice">
+        <div class="big">$17<small>/month</small></div>
+        <ul>
+          <li>Spring cooling + autumn heating tune-ups</li>
+          <li>Priority scheduling - front of the line</li>
+          <li>15% off all repairs</li>
+          <li>No overtime charges, ever</li>
+          <li>Cancel anytime, no lock-in</li>
+        </ul>
+        <a href="tel:+17045550163">Join by Phone</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">Authorised Brands</span><h2>We install and service the brands you trust</h2></div>
+    <div class="brands">
+      <div class="brandbadge">DAIKIN<small>Authorised Dealer</small></div>
+      <div class="brandbadge">Carrier<small>Factory Authorised</small></div>
+      <div class="brandbadge">TRANE<small>Comfort Specialist</small></div>
+      <div class="brandbadge">LENNOX<small>Premier Dealer</small></div>
+      <div class="brandbadge">MITSUBISHI ELECTRIC<small>Ductless Pro</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">Reviews</span><h2>Charlotte stays comfortable with us</h2></div>
+    <div class="ratingline"><span class="stars">★★★★★</span> 4.9 rating · 980+ verified Google reviews</div>
+    <div class="rev-grid">
+      <div class="rev"><div class="stars">★★★★★</div><p>"AC died on the hottest weekend of July. They had a tech out by noon, repair priced before he started, house cool again by dinner."</p><b>Sharon M. - Matthews</b></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"Two companies told us to replace the furnace. ComfortPeak fixed a cracked igniter for under $200 and it has run fine for two winters since."</p><b>Robert K. - Huntersville</b></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"The $17 plan pays for itself. They caught a failing capacitor at the spring tune-up that would have killed the compressor in August."</p><b>Yesenia G. - Concord</b></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">Service Area</span><h2>Across the Charlotte region</h2></div>
+    <div class="areas">
+      <span class="chip">Charlotte</span><span class="chip">Matthews</span><span class="chip">Huntersville</span><span class="chip">Concord</span>
+      <span class="chip">Gastonia</span><span class="chip">Rock Hill</span><span class="chip">Pineville</span><span class="chip">Mint Hill</span>
+      <span class="chip">Cornelius</span><span class="chip">Mooresville</span><span class="chip">Indian Trail</span><span class="chip">Fort Mill</span>
+    </div>
+    <div class="info-grid">
+      <div class="info"><b>Phone - 24/7</b><a href="tel:+17045550163">(704) 555-0163</a></div>
+      <div class="info"><b>Office</b>6315 South Blvd, Charlotte, NC 28217</div>
+      <div class="info"><b>Hours</b>Mon-Sat 7am-8pm · Emergency line 24/7</div>
+      <div class="info"><b>Licence</b>NC HVAC Licence #H3-28741</div>
+    </div>
+  </div>
+</section>
+
+<section class="formsec" id="quote">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Free Estimate</span>
+      <h2>Get a free in-home estimate</h2>
+      <p>New system quotes are free and unhurried - we measure, calculate the right size and leave a written price that holds for 30 days. Repairs? Tell us the symptoms and we will call you back.</p>
+    </div>
+    <form onsubmit="event.preventDefault();alert('Thanks! ComfortPeak will call you back to arrange your estimate.');">
+      <div><label for="h-name">Your name</label><input id="h-name" type="text" placeholder="Full name" required></div>
+      <div><label for="h-phone">Phone</label><input id="h-phone" type="tel" placeholder="(704) 555-0000" required></div>
+      <div><label for="h-svc">What do you need?</label>
+        <select id="h-svc"><option>Free estimate - new system</option><option>AC repair</option><option>Heating repair</option><option>Tune-up</option><option>PeakCare plan</option><option>Something else</option></select></div>
+      <div><label for="h-area">Your area</label><input id="h-area" type="text" placeholder="e.g. Matthews"></div>
+      <textarea placeholder="Tell us about your system - age, brand, and what's happening (or not happening)."></textarea>
+      <button class="submit" type="submit">Request My Free Estimate</button>
+      <div class="formnote">Free estimates on new systems. No pressure, no obligation, no spam.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand">Comfort<span>Peak</span> Air</div>
+    <p>6315 South Blvd, Charlotte, NC 28217 · <a href="tel:+17045550163">(704) 555-0163</a> · NC HVAC Licence #H3-28741</p>
+    <p style="margin-top:6px">AC repair, furnace installation and maintenance plans across the Charlotte region.</p>
+    <div class="demoflag">
+      <p>Concept demo website designed by Azher for HVAC businesses. Not a real business.</p>
+      <p style="margin-top:4px">Designed by Azher · Malegaon, Maharashtra 423203, India</p>
+    </div>
+  </div>
+</footer>
+
+<a class="sticky-call" href="tel:+17045550163">☎ Tap to Call - (704) 555-0163</a>
+
+</body>
+</html>
